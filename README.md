@@ -1,8 +1,8 @@
 
 <br/>
 <div align="center">
-<a href="https://github.com/ShaanCoding/ReadME-Generator">
-<img src="sadasasddas" alt="Logo" width="80" height="80">
+<a>
+<img src="https://raw.githubusercontent.com/TypicalTeacup/cars-spot/master/src/assets/logo.svg" alt="Logo" width="80" height="80">
 </a>
 <h3 align="center">Cars Spot</h3>
 <p align="center">
@@ -10,7 +10,7 @@ A site for a nonexistant (?) business called Cars Spot.
 
 <br/>
 <br/>
-<a href="https://github.com/ShaanCoding/ReadME-Generator/">View Demo .</a>  
+<a href="https://github.com/ShaanCoding/ReadME-Generator/">View Demo</a>  
 
 
 </p>
