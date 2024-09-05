@@ -10,7 +10,7 @@ A site for a nonexistant (?) business called Cars Spot.
 
 <br/>
 <br/>
-<a href="https://github.com/ShaanCoding/ReadME-Generator/">View Demo</a>  
+<a href="https://cars-spot-one.vercel.app/">View Demo</a>  
 
 
 </p>
@@ -22,6 +22,7 @@ This site is part of a recruitment challenge organised by [adsite.pro](https://a
 ### Built With
 
 - [Vite](https://vitejs.dev/)
+- [Vercel](https://vercel.com/)
 - [Vue](https://vuejs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Swiper](https://swiperjs.com/)
