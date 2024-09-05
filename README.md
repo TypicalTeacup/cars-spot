@@ -2,7 +2,7 @@
 <br/>
 <div align="center">
 <a>
-<img src="https://raw.githubusercontent.com/TypicalTeacup/cars-spot/master/src/assets/logo.svg" alt="Logo" width="80" height="80">
+<img src="https://raw.githubusercontent.com/TypicalTeacup/cars-spot/master/src/assets/logo.svg" alt="Logo" height="80">
 </a>
 <h3 align="center">Cars Spot</h3>
 <p align="center">
