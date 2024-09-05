@@ -25,7 +25,7 @@ const goto = (href) => {
                 class="flex flex-col gap-8 lg:pr-20 justify-center items-center lg:justify-start lg:items-start"
             >
                 <h1
-                    class="uppercase font-title text-[76.29px] leading-[110%] -tracking-[0.04em] text-center lg:text-left text-pretty md:w-1/2"
+                    class="uppercase font-title text-[76.29px] leading-[110%] -tracking-[0.04em] text-center lg:text-left text-pretty md:w-10/12 lg:w-1/2"
                     data-aos="fade-up"
                 >
                     Sprzedajemy samochody z Europy
