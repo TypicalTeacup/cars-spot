@@ -93,7 +93,7 @@ const galleryVan = ref(false);
                 :key="`van${index}`"
             >
                 <img
-                    class="aspect-image object-cover h-[446px]"
+                    class="aspect-image object-cover max-w-screen-sm w-screen"
                     :src="`/img/gallery/${image}`"
                     alt=""
                 />
