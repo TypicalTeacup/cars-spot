@@ -45,10 +45,10 @@ const goto = (href) => {
                 data-aos="fade-up"
                 data-aos-delay="100"
             >
-                <Button @click="goto('#gallery')" primary>
+                <Button @click="goto('#gallery')" class="basis-1 flex-grow sm:flex-grow-0 sm:basis-auto" primary>
                     Zobacz zdjęcia
                 </Button>
-                <Button>Zadzwoń do nas</Button>
+                <Button class="basis-1 flex-grow sm:flex-grow-0 sm:basis-auto">Zadzwoń do nas</Button>
             </div>
         </div>
         <img
