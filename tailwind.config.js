@@ -4,10 +4,7 @@ export default {
     theme: {
         extend: {
             container: {
-                padding: {
-                    DEFAULT: "8px",
-                    sm: "40px",
-                },
+                padding: "40px",
             },
             aspectRatio: {
                 image: "600 / 446",
