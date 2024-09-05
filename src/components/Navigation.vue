@@ -10,6 +10,7 @@ const links = [
 
 const isOpen = ref(false);
 </script>
+
 <template>
     <nav class="py-4 container mx-auto">
         <div class="flex justify-between items-center">
@@ -28,8 +29,22 @@ const isOpen = ref(false);
                 <Button class="float-right" primary>Zadzwoń do nas</Button>
             </div>
             <!--mobile-->
-            <Button @click="isOpen = !isOpen" class="md:hidden" primary>
-                Menu
+
+            <Button class="border-none md:hidden" @click="isOpen = !isOpen">
+                <div class="grid justify-items-center gap-1.5">
+                    <span
+                        class="h-1 w-8 rounded-full bg-accent transition"
+                        :class="{ 'rotate-45 translate-y-2.5': isOpen }"
+                    ></span>
+                    <span
+                        class="h-1 w-8 rounded-full bg-accent transition"
+                        :class="{ 'scale-x-0 opacity-0': isOpen }"
+                    ></span>
+                    <span
+                        class="h-1 w-8 rounded-full bg-accent"
+                        :class="{ '-rotate-45 -translate-y-2.5': isOpen }"
+                    ></span>
+                </div>
             </Button>
         </div>
         <!--mobile-->
