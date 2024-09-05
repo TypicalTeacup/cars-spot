@@ -31,7 +31,7 @@ const isOpen = ref(false);
             </div>
             <!--mobile-->
 
-            <Button class="border-none md:hidden" @click="isOpen = !isOpen">
+            <button class="border-none md:hidden" @click="isOpen = !isOpen">
                 <div class="grid justify-items-center gap-1.5">
                     <span
                         class="h-1 w-8 rounded-full bg-accent transition"
@@ -46,7 +46,7 @@ const isOpen = ref(false);
                         :class="{ '-rotate-45 -translate-y-2.5': isOpen }"
                     ></span>
                 </div>
-            </Button>
+            </button>
         </div>
         <!--mobile-->
         <div
