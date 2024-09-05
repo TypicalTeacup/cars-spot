@@ -47,7 +47,7 @@ const galleryVan = ref(false);
             >
                 <a
                     @click.prevent="galleryVan = false"
-                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300 w-max"
+                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300 w-max select-none"
                     :class="{
                         'text-accent font-semibold after:w-full after:left-0':
                             !galleryVan,
@@ -58,7 +58,7 @@ const galleryVan = ref(false);
                 >
                 <a
                     @click.prevent="galleryVan = true"
-                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300 w-max"
+                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300 w-max select-none"
                     :class="{
                         'text-accent font-semibold after:w-full after:left-0':
                             galleryVan,
@@ -93,14 +93,14 @@ const galleryVan = ref(false);
                 :key="`van${index}`"
             >
                 <img
-                    class="aspect-image object-cover max-w-screen-sm w-screen"
+                    class="aspect-image object-cover max-w-screen-sm w-screen select-none"
                     :src="`/img/gallery/${image}`"
                     alt=""
                 />
             </swiper-slide>
             <swiper-slide v-else v-for="(image, index) in images" :key="index">
                 <img
-                    class="aspect-image object-cover max-w-screen-sm w-screen"
+                    class="aspect-image object-cover max-w-screen-sm w-screen select-none"
                     :src="`/img/gallery/${image}`"
                     alt=""
                 />

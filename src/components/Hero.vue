@@ -7,9 +7,10 @@ const goto = (href) => {
     window.location.href = href;
 };
 </script>
+
 <template>
     <img
-        class="absolute -z-20 top-0 right-20 hidden lg:block translate-x-48 lg:translate-x-0"
+        class="absolute -z-20 top-0 right-20 hidden lg:block translate-x-48 lg:translate-x-0 select-none"
         data-aos="fade-left"
         data-aos-delay="200"
         :src="waves"
@@ -52,7 +53,7 @@ const goto = (href) => {
             </div>
         </div>
         <img
-            class="absolute top-2/3 lg:top-1/2 right-0 -z-10 w-fit h-fit"
+            class="absolute top-2/3 lg:top-1/2 right-0 -z-10 w-fit h-fit select-none"
             data-aos="fade-left"
             data-aos-delay="100"
             :src="hero"
