@@ -41,7 +41,7 @@ const goto = (href) => {
             </div>
             <div
                 id="hero-buttons"
-                class="flex gap-6 justify-center lg:justify-start"
+                class="flex gap-6 justify-center lg:justify-start pb-3 sm:pb-0"
                 data-aos="fade-up"
                 data-aos-delay="100"
             >
