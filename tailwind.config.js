@@ -9,6 +9,9 @@ export default {
                     sm: "40px",
                 },
             },
+            aspectRatio: {
+                image: "600 / 446",
+            },
             colors: {
                 white: "#ffffff",
                 accent: "#0147FF",
