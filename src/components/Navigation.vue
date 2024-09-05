@@ -15,7 +15,7 @@ const isOpen = ref(false);
         <div class="flex justify-between items-center">
             <img :src="logo" alt="Cars Spot" />
             <!--desktop-->
-            <div class="hidden lg:contents">
+            <div class="hidden md:contents">
                 <div class="flex gap-6">
                     <a
                         v-for="(link, index) in links"
@@ -28,13 +28,13 @@ const isOpen = ref(false);
                 <Button class="float-right" primary>Zadzwoń do nas</Button>
             </div>
             <!--mobile-->
-            <Button @click="isOpen = !isOpen" class="lg:hidden" primary
-                >Menu</Button
-            >
+            <Button @click="isOpen = !isOpen" class="md:hidden" primary>
+                Menu
+            </Button>
         </div>
         <!--mobile-->
         <div
-            class="grid lg:hidden transition-all duration-500 pt-3"
+            class="grid md:hidden transition-all duration-500 pt-3"
             :class="{
                 '[grid-template-rows:0fr]': !isOpen,
                 '[grid-template-rows:1fr]': isOpen,
@@ -49,9 +49,9 @@ const isOpen = ref(false);
                 >
                     {{ link.title }}
                 </a>
-                <Button class="overflow-hidden w-full flex-grow" primary
-                    >Zadzwoń do nas</Button
-                >
+                <Button class="overflow-hidden w-full flex-grow" primary>
+                    Zadzwoń do nas
+                </Button>
             </div>
         </div>
     </nav>
