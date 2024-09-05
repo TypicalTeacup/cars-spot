@@ -40,10 +40,14 @@ const galleryVan = ref(false);
                     Zobacz naszą galerię zdjęć
                 </h2>
             </div>
-            <div class="flex gap-20" data-aos="fade-right" data-aos-once="true">
+            <div
+                class="flex flex-col sm:flex-row gap-6 sm:gap-20"
+                data-aos="fade-right"
+                data-aos-once="true"
+            >
                 <a
                     @click.prevent="galleryVan = false"
-                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300"
+                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300 w-max"
                     :class="{
                         'text-accent font-semibold after:w-full after:left-0':
                             !galleryVan,
@@ -52,12 +56,9 @@ const galleryVan = ref(false);
                     }"
                     >Samochody osobowe</a
                 >
-                <!--
-                'relative after:absolute after:bottom-1 after:w-0 after:left-1/2 after:h-px after:bg-accent after:hover:w-full after:hover:left-0 after:transition-all after:duration-300':
-                -->
                 <a
                     @click.prevent="galleryVan = true"
-                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300"
+                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300 w-max"
                     :class="{
                         'text-accent font-semibold after:w-full after:left-0':
                             galleryVan,
