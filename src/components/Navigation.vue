@@ -19,6 +19,7 @@ const isOpen = ref(false);
             <div class="hidden md:contents">
                 <div class="flex gap-6">
                     <a
+                        class="relative after:absolute after:-bottom-0 after:w-0 after:left-1/2 after:h-px after:bg-accent after:hover:w-full after:hover:left-0 after:transition-all after:duration-300"
                         v-for="(link, index) in links"
                         :href="link.href"
                         :key="index"
@@ -57,14 +58,17 @@ const isOpen = ref(false);
         >
             <div class="flex flex-col items-center gap-6 overflow-hidden">
                 <a
+                    class="text-center w-max relative after:absolute after:-bottom-0 after:w-0 after:left-1/2 after:h-px after:bg-accent after:hover:w-full after:hover:left-0 after:transition-all after:duration-300"
                     v-for="(link, index) in links"
-                    class="text-center w-max"
                     :href="link.href"
                     :key="index"
                 >
                     {{ link.title }}
                 </a>
-                <Button class="overflow-hidden w-full flex-grow" primary>
+                <Button
+                    class="overflow-hidden w-full flex-grow hover:scale-95"
+                    primary
+                >
                     Zadzwoń do nas
                 </Button>
             </div>

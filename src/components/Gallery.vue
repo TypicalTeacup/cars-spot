@@ -9,10 +9,6 @@ import "swiper/css/autoplay";
 
 const modules = [Pagination, Autoplay];
 
-const props = defineProps({
-    van: Boolean,
-});
-
 const images = ["car1.jpg", "car2.jpg", "car3.jpg", "car4.jpg", "car5.jpg"];
 const vanImages = ["van1.jpg", "van2.jpg", "van3.jpg", "van4.jpg", "van5.jpg"];
 
@@ -47,19 +43,26 @@ const galleryVan = ref(false);
             <div class="flex gap-20" data-aos="fade-right" data-aos-once="true">
                 <a
                     @click.prevent="galleryVan = false"
-                    class="cursor-pointer transition text-[15px]"
+                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300"
                     :class="{
-                        'text-accent font-semibold underline': !galleryVan,
-                        'text-black font-normal': galleryVan,
+                        'text-accent font-semibold after:w-full after:left-0':
+                            !galleryVan,
+                        'text-black font-normal after:w-0 after:left-1/2 after:hover:w-full after:hover:left-0':
+                            galleryVan,
                     }"
                     >Samochody osobowe</a
                 >
+                <!--
+                'relative after:absolute after:bottom-1 after:w-0 after:left-1/2 after:h-px after:bg-accent after:hover:w-full after:hover:left-0 after:transition-all after:duration-300':
+                -->
                 <a
                     @click.prevent="galleryVan = true"
-                    class="cursor-pointer transition text-[15px]"
+                    class="cursor-pointer transition text-[15px] relative after:absolute after:bottom-1 after:bg-accent after:h-px after:transition-all after:duration-300"
                     :class="{
-                        'text-accent font-semibold underline': galleryVan,
-                        'text-black font-normal': !galleryVan,
+                        'text-accent font-semibold after:w-full after:left-0':
+                            galleryVan,
+                        'text-black font-normal after:w-0 after:left-1/2 after:hover:w-full after:hover:left-0':
+                            !galleryVan,
                     }"
                     >Samochody dostawcze</a
                 >
